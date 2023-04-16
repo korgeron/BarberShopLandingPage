@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    background: black;
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+nav > img{
+    height: 100%;
+    width: 10vw;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    margin: 0 2em 0 0;
+    list-style: none;
+    padding: 3vh;
+}
+nav > ul > li:hover{
+    cursor: pointer;
+    background: grey;
+}
+
+.film{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0,0,0,.4);
+    height: 90vh;
+}
+
+.content{
+    height: 90vh;
+    background-image: url('images/barbershop.jpg');
+}
+.logo{
+    background-image: url('images/barber.jpg');
+}
