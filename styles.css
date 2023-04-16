@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
 body{
@@ -19,9 +20,26 @@ nav {
     font-size: 2.5vh;
 }
 
-nav > img{
+.mobile-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    height: 0;
+}
+
+
+
+.logo{
+    position: relative;
+    top: -15px;
     height: 100%;
-    width: 10vw;
+    width: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scale: 1.5;
 }
 
 nav > ul{
@@ -40,15 +58,27 @@ nav > ul > li:hover{
 }
 
 .shader{
-    font-family: 'Playfair Display', serif;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgb(0,0,0,.55);
-    height: 90vh;
+    height: 90%;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 2.5vh;
+    right: 5vw;
+    scale: 1;
+    padding: 2vh;
+
 }
 
 .content{
@@ -59,4 +89,22 @@ nav > ul > li:hover{
 }
 .logo{
     background-image: url('images/barber.jpg');
+}
+
+@media screen and (1000px > width){
+    nav{
+        display: none;
+    }
+    .mobile-navbar{
+        display: flex;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .shader{
+        height: 100%;
+    }
+    .content{
+        height: 100vh;
+    }
 }
