@@ -139,9 +139,7 @@ nav > ul > li:hover{
     background-size: cover;
     background-image: url('images/barbershop.jpg');
 }
-.logo{
-    background-image: url('images/barber.jpg');
-}
+
 
 
 @media screen and (width <= 1000px){
