@@ -21,7 +21,7 @@ body {}
     height: 100vh;
     width: 100vw;
     background-image: url('images/barbershop.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
