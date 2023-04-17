@@ -140,7 +140,9 @@ nav > ul > li:hover{
     background-image: url('images/barbershop.jpg');
 }
 .logo{
-    scale: 1.3;
+    scale: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 100%;
     width: 20%;
 }
