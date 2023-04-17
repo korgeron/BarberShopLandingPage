@@ -21,14 +21,39 @@ nav {
 }
 
 .mobile-navbar{
+
+    background: black;
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: none;
-    height: 0;
+    height: 0px;
+    transition: .5s ease-in-out;
+    color: snow;
 }
 
+.mobile-navbar > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: .5s ease-in-out;
+}
+
+.mobile-navbar > ul > li{
+    margin: 0 2em 0 0;
+    list-style: none;
+    padding: 3vh;
+}
 
 
 .logo{
@@ -74,12 +99,44 @@ nav > ul > li:hover{
 .mobile-menu{
     display: none;
     position: absolute;
-    top: 2.5vh;
-    right: 5vw;
-    scale: 1;
+    top: 1vh;
+    right: 1vw;
     padding: 2vh;
-
+    scale: 1;
+    transition: 1s ease-in-out;
 }
+
+.mobile-menu:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.menu-bars{
+    display: none;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    padding: 2vh;
+    scale: 1;
+    transition: 1s ease-in-out;
+}
+.menu-bars:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.menu-x{
+    display: none;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    padding: 2vh;
+    scale: 1;
+    transition: 1s ease-in-out;
+}
+.menu-x:hover{
+           cursor: pointer;
+           border: 1px solid white;
+       }
 
 .content{
     height: 90vh;
@@ -91,6 +148,7 @@ nav > ul > li:hover{
     background-image: url('images/barber.jpg');
 }
 
+
 @media screen and (1000px > width){
     nav{
         display: none;
@@ -98,7 +156,7 @@ nav > ul > li:hover{
     .mobile-navbar{
         display: flex;
     }
-    .mobile-menu{
+    .menu-bars{
         display: block;
     }
     .shader{
