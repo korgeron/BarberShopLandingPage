@@ -9,6 +9,15 @@ const menuAway = document.querySelector('.content');
 const navUL = document.querySelector('.mnavUL');
 
 
+setInterval(()=>{
+    if (window.innerWidth > 1000) {
+        menuBtn1.style.display = "none";
+    }
+    if (menuBtn2.style.display == "none" && window.innerWidth < 1000) {
+        menuBtn1.style.display = "block";
+    }
+},1000)
+
 menuBtn1.addEventListener('click', ()=>{
     navUL.style.scale = "1";
     navbar.style.height = "40%";
