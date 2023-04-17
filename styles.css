@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Dancing Script', cursive;
 }
 body {}
 .navbar {
@@ -11,6 +12,25 @@ body {}
     right: 0;
     height: 0;
     background: black;
+}
+.nav-links {
+    display: none;
+}
+.nav-links > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    list-style: none;
+    padding: 1em;
+}
+.nav-links > li:hover {
+    cursor: pointer;
+    background: grey;
+    border: 2px solid brown;
+}
+.nav-logo {
+    display: none;
 }
 .shader {
     height: 100vh;
@@ -30,5 +50,28 @@ body {}
 @media screen and (width >= 1000px) {
     .navbar {
         height: 15vh;
+    }
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: inherit;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 1em 0 0;
+    }
+    .nav-logo{
+        position: absolute;
+        top: -2em;
+        left: 0;
+        display: block;
+        height: inherit;
+        width: 15%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        scale: 2;
+
     }
 }
