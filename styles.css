@@ -89,12 +89,12 @@
     font-size: 6vh;
 }
 .content {
-    height: auto;
+    height: 90vh;
     margin: 0 10vw 0 10vw;
     font-size: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
