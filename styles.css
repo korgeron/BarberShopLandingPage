@@ -15,6 +15,7 @@ body {}
     transition: .5s ease-in-out;
 }
 .nav-buttons {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -92,6 +93,9 @@ body {}
         background-repeat: no-repeat;
         scale: 2;
 
+    }
+    .nav-buttons{
+        display: none;
     }
     .bar-btn {
         display: none;
