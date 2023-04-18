@@ -1,7 +1,7 @@
 // START OF MOBILE
 
 const navbar = document.querySelector('.navbar');
-const navLinks = document.querySelector('.nav-links');
+const navLinksMobile = document.querySelector('.nav-links-mobile');
 const barBtn = document.querySelector('.bar-btn');
 const xBtn = document.querySelector('.x-btn');
 
