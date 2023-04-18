@@ -8,7 +8,7 @@ const xBtn = document.querySelector('.x-btn');
 barBtn.addEventListener('click', ()=>{
     barBtn.style.display = 'none';
     xBtn.style.display = 'block';
-    navbar.style.height = '30vh';
+    navbar.style.height = '50vh';
 })
 
 xBtn.addEventListener('click', ()=>{
