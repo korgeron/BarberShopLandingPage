@@ -83,7 +83,47 @@
     height: 100vh;
     width: 100vw;
     background: rgb(0 , 0 , 0 , .55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
 }
+.content {
+    height: auto;
+    margin: 0 10vw 0 10vw;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.content > p {
+    margin: 1vh;
+    padding: 0 3vw 0 3vw;
+}
+.content > p > span {
+    color: red;
+}
+.content-buttons {
+    display: flex;
+    margin: 1vh;
+}
+.content-buttons > button {
+    background: none;
+    border: 1px solid white;
+    padding: 3vh;
+    margin: 1vh;
+    font-size: 3vh;
+    border-radius: 1vh;
+}
+.content-buttons > button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 1px solid brown;
+}
+
 .background-logo {
     height: 100vh;
     width: 100vw;
@@ -125,6 +165,9 @@
     cursor: pointer;
     background: white;
     color: black;
+}
+.random-info {
+    color: red;
 }
 @media screen and (width >= 1000px) {
     .navbar {
