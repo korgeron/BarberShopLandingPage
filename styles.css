@@ -80,7 +80,7 @@
     display: none;
 }
 .shader {
-    height: auto;
+    height: 100vh;
     width: 100vw;
     background: rgb(0 , 0 , 0 , .55);
     display: flex;
@@ -89,8 +89,6 @@
     font-size: 6vh;
 }
 .content {
-    height: 90vh;
-    margin: 5vh 10vw 5vh 10vw;
     font-size: inherit;
     display: flex;
     flex-direction: column;
