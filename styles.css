@@ -90,7 +90,7 @@
 }
 .content {
     height: 90vh;
-    margin: 0 10vw 0 10vw;
+    margin: 5vh 10vw 5vh 10vw;
     font-size: inherit;
     display: flex;
     flex-direction: column;
